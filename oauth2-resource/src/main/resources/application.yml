@@ -1,0 +1,23 @@
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value: |
+          -----BEGIN PUBLIC KEY-----
+          MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAluT/ZYst5miXWErbzctn
+          HjllVpaQHR4heqBtkz/h/KuIYWGBRVsMpch78MDxGcjKuOw4wD00lpbyeF40kkk4
+          8WFeGWUT6dytOWe6qAoYVIlbOFfSTZ6lduQmgBVBIAYHT/zVyNX8DsVH8MdXdAq4
+          hHF/+DoSqhOVnULb9pN+Ep/rc7wDEBVctVT3UejQlBSpai7dqgEJfffIqTWQ0lNu
+          QMyPsgdCHIU4eECuyA1q+3wjhDoMyW9yGjlNpVbW048qs3UYnDBghE+XKLvN+K4i
+          UmWYGiWwplYCiRdifMsD6wjA/gkTv1Fmtj8BEx7cL+2DU0Ld7VPccQYdwTvEsdlV
+          zQIDAQAB
+          -----END PUBLIC KEY-----
+
+spring:
+  datasource:
+    username: root
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/oauth_db?useSSL=false
+  jpa:
+    hibernate:
+      ddl-auto: update
